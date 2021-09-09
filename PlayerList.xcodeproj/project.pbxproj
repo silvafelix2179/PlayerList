@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC19FD4726A06DAE005DD3E2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC19FD4626A06DAE005DD3E2 /* Player.swift */; };
+		FC69144626E106850048898F /* TeamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC69144526E106850048898F /* TeamListView.swift */; };
 		FCA70E17268DF8B600B28CC4 /* PlayerListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA70E16268DF8B600B28CC4 /* PlayerListApp.swift */; };
-		FCA70E19268DF8B600B28CC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA70E18268DF8B600B28CC4 /* ContentView.swift */; };
+		FCA70E19268DF8B600B28CC4 /* TeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA70E18268DF8B600B28CC4 /* TeamView.swift */; };
 		FCA70E1B268DF8B600B28CC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA70E1A268DF8B600B28CC4 /* Assets.xcassets */; };
 		FCA70E1E268DF8B600B28CC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCA70E1D268DF8B600B28CC4 /* Preview Assets.xcassets */; };
+		FCC2B2B326D7CC4F006BD352 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2B2B226D7CC4F006BD352 /* Team.swift */; };
+		FCC2B2B526D7CEA8006BD352 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC2B2B426D7CEA8006BD352 /* League.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC19FD4626A06DAE005DD3E2 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		FC69144526E106850048898F /* TeamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListView.swift; sourceTree = "<group>"; };
 		FCA70E13268DF8B600B28CC4 /* PlayerList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayerList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCA70E16268DF8B600B28CC4 /* PlayerListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListApp.swift; sourceTree = "<group>"; };
-		FCA70E18268DF8B600B28CC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FCA70E18268DF8B600B28CC4 /* TeamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamView.swift; sourceTree = "<group>"; };
 		FCA70E1A268DF8B600B28CC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCA70E1D268DF8B600B28CC4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FCA70E1F268DF8B600B28CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCC2B2B226D7CC4F006BD352 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		FCC2B2B426D7CEA8006BD352 /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				FCA70E16268DF8B600B28CC4 /* PlayerListApp.swift */,
-				FCA70E18268DF8B600B28CC4 /* ContentView.swift */,
+				FCA70E18268DF8B600B28CC4 /* TeamView.swift */,
+				FC69144526E106850048898F /* TeamListView.swift */,
+				FC19FD4626A06DAE005DD3E2 /* Player.swift */,
+				FCC2B2B226D7CC4F006BD352 /* Team.swift */,
+				FCC2B2B426D7CEA8006BD352 /* League.swift */,
 				FCA70E1A268DF8B600B28CC4 /* Assets.xcassets */,
 				FCA70E1F268DF8B600B28CC4 /* Info.plist */,
 				FCA70E1C268DF8B600B28CC4 /* Preview Content */,
@@ -138,7 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCA70E19268DF8B600B28CC4 /* ContentView.swift in Sources */,
+				FCC2B2B326D7CC4F006BD352 /* Team.swift in Sources */,
+				FC69144626E106850048898F /* TeamListView.swift in Sources */,
+				FCA70E19268DF8B600B28CC4 /* TeamView.swift in Sources */,
+				FC19FD4726A06DAE005DD3E2 /* Player.swift in Sources */,
+				FCC2B2B526D7CEA8006BD352 /* League.swift in Sources */,
 				FCA70E17268DF8B600B28CC4 /* PlayerListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
