@@ -9,10 +9,7 @@ import SwiftUI
 
 struct TeamView: View {
 
-    @State var players = [
-        Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
-        Player(name: "Joao Felix", position: "Forward", imageName: "felix")
-    ]
+    @State var players:[Player]
     
     @State var index = 0
     
@@ -58,6 +55,6 @@ struct TeamView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        TeamView()
+        TeamView(players: [])
     }
 }

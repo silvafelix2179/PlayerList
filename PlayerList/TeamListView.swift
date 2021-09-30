@@ -16,57 +16,13 @@ struct TeamListView: View {
     var body: some View {
         NavigationView {
             
-            List {
+            List(0..<teams.count) { i in
                 NavigationLink(
-                    destination: TeamView(),
+                    destination: TeamView(players: teams[i].players),
                     label: {
-                        Text(teams[0].name)
+                        Text(teams[i].name)
                     })
-                NavigationLink(
-                    destination: TeamView(),
-                    label: {
-                        Text(teams[1].name)
-                    })
-                NavigationLink(
-                    destination: TeamView(),
-                    label: {
-                        Text(teams[2].name)
-                    })
-                NavigationLink(
-                    destination: TeamView(),
-                    label: {
-                        Text(teams[3].name)
-                    })
-                NavigationLink(
-                    destination: TeamView(),
-                    label: {
-                        Text(teams[4].name)
-                    })
-                NavigationLink(
-                    destination: TeamView(),
-                    label: {
-                        Text(teams[5].name)
-                    })
-                NavigationLink(
-                    destination: TeamView(),
-                    label: {
-                        Text(teams[6].name)
-                    })
-                NavigationLink(
-                    destination: TeamView(),
-                    label: {
-                        Text(teams[7].name)
-                    })
-                NavigationLink(
-                    destination: TeamView(),
-                    label: {
-                        Text(teams[8].name)
-                    })
-                NavigationLink(
-                    destination: TeamView(),
-                    label: {
-                        Text(teams[9].name)
-                    })
+               
             }
             .navigationTitle("Teams")
             
