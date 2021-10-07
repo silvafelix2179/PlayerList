@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TeamView: View {
+struct PlayerListView: View {
 
     @State var players:[Player]
     
@@ -55,6 +55,6 @@ struct TeamView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        TeamView(players: [])
+        PlayerListView(players: [])
     }
 }

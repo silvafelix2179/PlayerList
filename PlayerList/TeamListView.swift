@@ -18,7 +18,7 @@ struct TeamListView: View {
             
             List(0..<teams.count) { i in
                 NavigationLink(
-                    destination: TeamView(players: teams[i].players),
+                    destination: TeamView(team: teams[i]),
                     label: {
                         Text(teams[i].name)
                     })

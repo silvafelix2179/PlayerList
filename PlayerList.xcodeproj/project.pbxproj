@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59ADB25D2705F2E6006C5C50 /* PlayerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ADB25C2705F2E6006C5C50 /* PlayerListView.swift */; };
 		FC19FD4726A06DAE005DD3E2 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC19FD4626A06DAE005DD3E2 /* Player.swift */; };
 		FC69144626E106850048898F /* TeamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC69144526E106850048898F /* TeamListView.swift */; };
 		FCA70E17268DF8B600B28CC4 /* PlayerListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA70E16268DF8B600B28CC4 /* PlayerListApp.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		59ADB25C2705F2E6006C5C50 /* PlayerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListView.swift; sourceTree = "<group>"; };
 		FC19FD4626A06DAE005DD3E2 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		FC69144526E106850048898F /* TeamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListView.swift; sourceTree = "<group>"; };
 		FCA70E13268DF8B600B28CC4 /* PlayerList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayerList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +64,7 @@
 			children = (
 				FCA70E16268DF8B600B28CC4 /* PlayerListApp.swift */,
 				FCA70E18268DF8B600B28CC4 /* TeamView.swift */,
+				59ADB25C2705F2E6006C5C50 /* PlayerListView.swift */,
 				FC69144526E106850048898F /* TeamListView.swift */,
 				FC19FD4626A06DAE005DD3E2 /* Player.swift */,
 				FCC2B2B226D7CC4F006BD352 /* Team.swift */,
@@ -153,6 +156,7 @@
 				FCC2B2B326D7CC4F006BD352 /* Team.swift in Sources */,
 				FC69144626E106850048898F /* TeamListView.swift in Sources */,
 				FCA70E19268DF8B600B28CC4 /* TeamView.swift in Sources */,
+				59ADB25D2705F2E6006C5C50 /* PlayerListView.swift in Sources */,
 				FC19FD4726A06DAE005DD3E2 /* Player.swift in Sources */,
 				FCC2B2B526D7CEA8006BD352 /* League.swift in Sources */,
 				FCA70E17268DF8B600B28CC4 /* PlayerListApp.swift in Sources */,
