@@ -15,9 +15,10 @@ struct TeamView: View {
        
         VStack {
             
-            Text(team.name).font(.system(size: 35, weight: .thin))//make bigger
-            //team'leaggue neme
-            //team city
+            Text(team.name)
+                .font(.system(size: 35, weight: .thin))//make bigger
+            Text(team.league)//team'leaggue neme
+            Text(team.city) //team city
             
         }
        
