@@ -31,14 +31,13 @@ struct PlayerListView: View {
             
             HStack {
                 
-                Button("←", action: {
+                Button("<back", action: {
                     
                    index = index - 1
                 
                 }  )
                 .disabled(index < 1)
-                
-                Button("→", action: {
+                Button("next>", action: {
                     
                     index = index + 1
 

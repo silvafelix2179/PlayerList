@@ -12,15 +12,25 @@ struct TeamView: View {
     var team:Team
     
     var body: some View {
-       
-        VStack {
-            
-            Text(team.name)
-                .font(.system(size: 35, weight: .thin))//make bigger
-            Text(team.league)//team'leaggue neme
-            Text(team.city) //team city
-            
+        ZStack{
+            Color.blue
+            VStack {
+                
+                Text(team.name)
+                    .font(.system(size: 35, weight: .thin))//make bigger
+                Text(team.league.name)//team'leaggue neme
+                Text(team.city) //team city
+                
+                NavigationLink(
+                    destination: PlayerListView(players: team.players),
+                    label: {
+                        Text("Show Players>")
+                            .font(.system(size: 20, weight: .thin))
+                    })
+           
+            }
         }
+       
        
         
     }

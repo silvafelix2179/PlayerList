@@ -12,6 +12,7 @@ struct PlayerListApp: App {
     var body: some Scene {
         WindowGroup {
             TeamListView()
+       
         }
     }
 }

@@ -26,7 +26,6 @@ struct TeamListView: View {
             }
             .navigationTitle("Teams")
             
-            
         
     }
 }

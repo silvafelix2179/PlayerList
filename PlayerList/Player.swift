@@ -12,6 +12,7 @@ struct Player {
     var position:String
     var imageName:String
 
+    
 }
 
 
