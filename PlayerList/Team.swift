@@ -8,13 +8,38 @@
 import Foundation
 import SwiftUI
 
-struct Team {
+class Team {
+    internal init(city: String, color: Color, league: League, name: String, players: [Player]) {
+        self.city = city
+        self.color = color
+        self.league = league
+        self.name = name
+        self.players = players
+    }
+
 
     var city:String
     var color:Color
     var league:League
     var name:String
     var players:[Player]
+    var wins:Int = 0
+    var loses:Int = 0
+
+    
+    func win(){
+        wins = wins + 1
+    }
+    
+    
+    
+    func lose(){
+        loses = loses + 1
+    }
+
+    
+    
+    
     
     static var leicesterCity = Team(city: "Leicester", color: .blue, league: .englandPremier, name: "Leicester City FC", players:[
         Player(name: "Kasper Schmeichel", position: "goalkeeper", imageName: "ederson"),

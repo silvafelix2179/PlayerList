@@ -13,7 +13,7 @@ struct TeamView: View {
     
     var body: some View {
         ZStack{
-            Color.blue
+            team.color
             VStack {
                 
                 Text(team.name)
