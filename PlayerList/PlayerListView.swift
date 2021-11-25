@@ -25,13 +25,26 @@ struct TeamView: View {
                     destination: PlayerListView(players: team.players),
                     label: {
                         Text("Show Players>")
+                            .foregroundColor(.white)
                             .font(.system(size: 20, weight: .thin))
                     })
            
+                Text("WINS: \(team.wins) LOSES: \(team.losses)")
+            
             }
         }
-       
-       
+        
+        Button("win", action: {
+            
+          
+        
+        }  )
+        
+        Button("lose", action: {
+            
+      
+        
+        }  )
         
     }
 }

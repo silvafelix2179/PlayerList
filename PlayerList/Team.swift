@@ -24,7 +24,7 @@ class Team {
     var name:String
     var players:[Player]
     var wins:Int = 0
-    var loses:Int = 0
+    var losses:Int = 0
 
     
     func win(){
@@ -34,7 +34,7 @@ class Team {
     
     
     func lose(){
-        loses = loses + 1
+        losses = losses + 1
     }
 
     
