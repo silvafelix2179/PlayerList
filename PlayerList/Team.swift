@@ -25,7 +25,7 @@ class Team:ObservableObject {
     var players:[Player]
     @Published var wins:Int = 0
     @Published var losses:Int = 0
-    @Published var play:String = 0
+  
 
     
     func win(){
@@ -39,22 +39,22 @@ class Team:ObservableObject {
     }
 
     func play(){
+        var win = Bool.random()
+
+        if win == true {
+
+            print("win is true!!")
+
+        } else {
+
+            print("win is false")
+
+        }
     }
     // play
     //maybe they win
     //maybe they lose (50 50)
-    
-    var play = Bool.random()
-
-    if win == true {
-
-        print("win is true!!")
-
-    } else {
-
-        print("win is false")
-
-    }
+ 
 
     
     

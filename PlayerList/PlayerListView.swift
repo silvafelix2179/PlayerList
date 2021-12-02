@@ -53,7 +53,7 @@ struct TeamView: View {
             
             
             
-            }
+           ) }
         }
         
    
