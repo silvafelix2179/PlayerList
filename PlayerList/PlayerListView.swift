@@ -9,11 +9,11 @@ import SwiftUI
 
 struct TeamView: View {
    
-    var team:Team
+    @ObservedObject var team:Team
     
     var body: some View {
         ZStack{
-            team.color
+            //team.color
             VStack {
                 
                 Text(team.name)
@@ -30,21 +30,33 @@ struct TeamView: View {
                     })
            
                 Text("WINS: \(team.wins) LOSES: \(team.losses)")
+                
+                Button("win", action: {
+                    
+                    team.win()
+                    print()
+                
+                }  )
+                
+                Button("lose", action: {
+                    
+                    team.lose()
+                
+                }  )
+            //add play buttun
+            //
+                Button("play", action: {
+                    
+                    team.play()
+            
+                }
+            
+            
             
             }
         }
         
-        Button("win", action: {
-            
-          
-        
-        }  )
-        
-        Button("lose", action: {
-            
-      
-        
-        }  )
+   
         
     }
 }

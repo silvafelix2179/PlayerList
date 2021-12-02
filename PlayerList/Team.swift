@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class Team {
+class Team:ObservableObject {
     internal init(city: String, color: Color, league: League, name: String, players: [Player]) {
         self.city = city
         self.color = color
@@ -23,8 +23,9 @@ class Team {
     var league:League
     var name:String
     var players:[Player]
-    var wins:Int = 0
-    var losses:Int = 0
+    @Published var wins:Int = 0
+    @Published var losses:Int = 0
+    @Published var play:String = 0
 
     
     func win(){
@@ -37,7 +38,24 @@ class Team {
         losses = losses + 1
     }
 
+    func play(){
+    }
+    // play
+    //maybe they win
+    //maybe they lose (50 50)
     
+    var play = Bool.random()
+
+    if win == true {
+
+        print("win is true!!")
+
+    } else {
+
+        print("win is false")
+
+    }
+
     
     
     
