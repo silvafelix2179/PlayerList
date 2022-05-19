@@ -10,12 +10,15 @@ import SwiftUI
 struct TeamView: View {
    
     @ObservedObject var team:Team
+    @State var opponent:String = ""
+    @State var showingAlert:Bool = false
+    var allteams = Team.all.map({$0.name})
     
     var body: some View {
         ZStack{
             //team.color
             VStack {
-                
+                var opponentTeams = allteams.filter{$0 != team.name}
                 Text(team.name)
                     .font(.system(size: 35, weight: .thin))//make bigger
                 Text(team.league.name)//team'leaggue neme
@@ -44,14 +47,26 @@ struct TeamView: View {
                 
                 }  )
             //add play buttun
-            //
+           
+                Picker("opponient", selection: $opponent){
+                    ForEach(opponentTeams, id: \.self) {
+                                            Text($0)
+                                        }
+                }
+                //
+                .alert(isPresented: $showingAlert) {
+                            Alert(title: Text("Important message"), message: Text("Wear sunscreen"), dismissButton: .default(Text("Got it!")))
+                        }
+                
+                
+                
                 Button("play", action: {
                     
-                    team.play()
+                    team.play(opponent: Team.leeds, handler: {win in showingAlert = true})
+            
+               
             
                 }
-            
-            
             
            ) }
         }

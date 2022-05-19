@@ -9,12 +9,13 @@ import Foundation
 import SwiftUI
 
 class Team:ObservableObject {
-    internal init(city: String, color: Color, league: League, name: String, players: [Player]) {
+    internal init(city: String, color: Color, league: League, name: String, players: [Player] ,logoName:String) {
         self.city = city
         self.color = color
         self.league = league
         self.name = name
         self.players = players
+        self.logo = Image(logoname)
     }
 
 
@@ -23,6 +24,7 @@ class Team:ObservableObject {
     var league:League
     var name:String
     var players:[Player]
+    var logo:Image
     @Published var wins:Int = 0
     @Published var losses:Int = 0
   
@@ -38,18 +40,22 @@ class Team:ObservableObject {
         losses = losses + 1
     }
 
-    func play(){
-        var win = Bool.random()
+    func play(opponent:Team, handler:(Bool)->()){
+           var win = Bool.random()
 
-        if win == true {
+           if win == true {
+               wins += 1
+               opponent.losses += 1
+             
 
-            print("win is true!!")
+           } else {
+               //IF we lose
+               losses += 1
+               opponent.wins += 1
 
-        } else {
-
-            print("win is false")
-
-        }
+           }
+      
+    handler(win)
     }
     // play
     //maybe they win
@@ -58,7 +64,7 @@ class Team:ObservableObject {
 
     
     
-    
+
     static var leicesterCity = Team(city: "Leicester", color: .blue, league: .englandPremier, name: "Leicester City FC", players:[
         Player(name: "Kasper Schmeichel", position: "goalkeeper", imageName: "ederson"),
                 Player(name: "Danny Ward", position: "goalkeeper", imageName: "carson"),
@@ -88,7 +94,7 @@ class Team:ObservableObject {
                 Player(name: "Ayoze Perez", position: "Forward", imageName: "felix"),
                 Player(name: "Patson Daka", position: "Forward", imageName: "silva"),
                 Player(name: "Ademola Lookman", position: "Forward", imageName: "felix"),
-    ]  )
+    ], logoName: "mc_logo"  )
     
     static var mancity = Team(city: "Manchester", color: .blue, league: .englandPremier, name: "Manchester City FC", players:[
         Player(name: "Ederson", position: "goalkeeper", imageName: "ederson"),
@@ -162,4 +168,9 @@ class Team:ObservableObject {
         Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
         Player(name: "Joao Felix", position: "Forward", imageName: "felix")
     ]  )
+
+
+   static var all:[Team] = [.leicesterCity, .mancity, .chelsea,.liverpool,.manchesterunited,.totenham,.arsenal,.astonvilla,.leeds,.everton ]
+    
+
 }
