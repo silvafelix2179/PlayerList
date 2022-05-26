@@ -15,7 +15,7 @@ class Team:ObservableObject {
         self.league = league
         self.name = name
         self.players = players
-        self.logo = Image(logoname)
+        self.logo = Image(logoName)
     }
 
 
@@ -94,7 +94,7 @@ class Team:ObservableObject {
                 Player(name: "Ayoze Perez", position: "Forward", imageName: "felix"),
                 Player(name: "Patson Daka", position: "Forward", imageName: "silva"),
                 Player(name: "Ademola Lookman", position: "Forward", imageName: "felix"),
-    ], logoName: "mc_logo"  )
+    ], logoName: "leicesterlogo"  )
     
     static var mancity = Team(city: "Manchester", color: .blue, league: .englandPremier, name: "Manchester City FC", players:[
         Player(name: "Ederson", position: "goalkeeper", imageName: "ederson"),
@@ -123,7 +123,7 @@ class Team:ObservableObject {
         Player(name: "Riyad mahrez", position: "Forward", imageName: "felix"),
         Player(name: "Fernandinho", position: "Forward", imageName: "silva"),
         Player(name: "Phil foden", position: "Forward", imageName: "felix"),
-    ]  )
+    ], logoName: "mc_logo" )
     
     static var chelsea = Team(city: "london", color: .blue, league: .englandPremier, name: "Chelsea FC", players:[
         Player(name: "Kepa Arrizabalaga", position: "goalkeeper", imageName: "ederson"),
@@ -137,37 +137,37 @@ class Team:ObservableObject {
         Player(name: "Aymeric laporte", position: "defender", imageName: "steffin"),
         Player(name: "joao cancelo", position: "defender", imageName: "felix"),
         Player(name: "Phillippe sandler", position: "defender", imageName: "silva"),
-    ]  )
+    ], logoName: "mc_logo"  )
     static var liverpool = Team(city: "livepool", color: .red, league: .englandPremier, name: "Livepool FC", players:[
         Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
         Player(name: "Joao Felix", position: "Forward", imageName: "felix")
-    ]  )
+    ], logoName: "mc_logo"  )
     static var manchesterunited = Team(city: "Manchester", color: .red, league: .englandPremier, name: "Manchester United FC", players:[
         Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
         Player(name: "Joao Felix", position: "Forward", imageName: "felix")
-    ]  )
+    ], logoName: "mc_logo"  )
     static var totenham = Team(city: "London", color: .white, league: .englandPremier, name: "Tottenham Hotspur FC", players:[
         Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
         Player(name: "Joao Felix", position: "Forward", imageName: "felix")
-    ]  )
+    ], logoName: "mc_logo"  )
     
     static var arsenal = Team(city: "London", color: .red, league: .englandPremier, name: "Alsenal FC", players:[
         Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
         Player(name: "Joao Felix", position: "Forward", imageName: "felix")
-    ]  )
+    ], logoName: "mc_logo"  )
     
     static var astonvilla = Team(city: "Birmingham", color: .red, league: .englandPremier, name: "Aston Villa FC", players:[
         Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
         Player(name: "Joao Felix", position: "Forward", imageName: "felix")
-    ]  )
+    ], logoName: "mc_logo"  )
     static var leeds = Team(city: "leeds", color: .yellow, league: .englandPremier, name: "Leeds United FC", players:[
         Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
         Player(name: "Joao Felix", position: "Forward", imageName: "felix")
-    ]  )
+    ] , logoName: "mc_logo" )
     static var everton = Team(city: "livepool", color: .blue, league: .englandPremier, name: "Everton FC", players:[
         Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
         Player(name: "Joao Felix", position: "Forward", imageName: "felix")
-    ]  )
+    ], logoName: "mc_logo"  )
 
 
    static var all:[Team] = [.leicesterCity, .mancity, .chelsea,.liverpool,.manchesterunited,.totenham,.arsenal,.astonvilla,.leeds,.everton ]

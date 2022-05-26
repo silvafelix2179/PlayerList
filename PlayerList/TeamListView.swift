@@ -20,7 +20,11 @@ struct TeamListView: View {
                 NavigationLink(
                     destination: TeamView(team: teams[i]),
                     label: {
-                        Text(teams[i].name)
+                        HStack{
+                            teams[i]. 
+                            Text(teams[i].name)
+                        }
+                        
                     })
                
             }

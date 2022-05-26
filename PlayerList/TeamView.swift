@@ -1,59 +1,83 @@
 //
-//  ContentView.swift
+//  PlayerListView.swift
 //  PlayerList
 //
-//  Created by Dylan Southard on 1/7/2564 BE.
+//  Created by 横田清志郎 on 2021/09/30.
 //
 
 import SwiftUI
 
-struct PlayerListView: View {
-
-    @State var players:[Player]
-    
-    @State var index = 0
+struct TeamView: View {
+   
+    @ObservedObject var team:Team
+    @State var opponent:String = ""
+    @State var showingAlert:Bool = false
+    var allteams = Team.all.map({$0.name})
     
     var body: some View {
-        
-        VStack {
-            Image(players[index].imageName)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-            
-            
-            Text(players[index].name)
-                .font(.title)
-                .foregroundColor(.blue)
-            
-            Text(players[index].position)
-                .font(.headline)
-                .foregroundColor(.green)
-            
-            HStack {
+        ZStack{
+            //team.color
+            VStack {
+                var opponentTeams = allteams.filter{$0 != team.name}
+                Text(team.name)
+                    .font(.system(size: 35, weight: .thin))//make bigger
+                Text(team.league.name)//team'leaggue neme
+                Text(team.city) //team city
                 
-                Button("<back", action: {
+                NavigationLink(
+                    destination: PlayerListView(players: team.players),
+                    label: {
+                        Text("Show Players>")
+                            .foregroundColor(.white)
+                            .font(.system(size: 20, weight: .thin))
+                    })
+           
+                Text("WINS: \(team.wins) LOSES: \(team.losses)")
+                
+                Button("win", action: {
                     
-                   index = index - 1
+                    team.win()
+                    print()
                 
                 }  )
-                .disabled(index < 1)
-                Button("next>", action: {
-                    
-                    index = index + 1
-
-                }  )
-                .disabled(index >= players.count - 1)
                 
-            }
+                Button("lose", action: {
+                    
+                    team.lose()
+                
+                }  )
+            //add play buttun
+           
+                Picker("opponient", selection: $opponent){
+                    ForEach(opponentTeams, id: \.self) {
+                                            Text($0)
+                                        }
+                }
+                //
+                .alert(isPresented: $showingAlert) {
+                            Alert(title: Text("Important message"), message: Text("Wear sunscreen"), dismissButton: .default(Text("Got it!")))
+                        }
+                
+                
+                
+                Button("play", action: {
+                    
+                    team.play(opponent: Team.leeds, handler: {win in showingAlert = true})
             
+               
+            
+                }
+            
+           ) }
         }
+        
+   
+        
     }
 }
 
-
-
-struct ContentView_Previews: PreviewProvider {
+struct PlayerListView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerListView(players: [])
+        TeamView(team:.mancity)
     }
 }
