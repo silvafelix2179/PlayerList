@@ -21,7 +21,9 @@ struct TeamListView: View {
                     destination: TeamView(team: teams[i]),
                     label: {
                         HStack{
-                            teams[i]. 
+                            teams[i].logo
+                                .resizable()
+                                .frame(width: 40, height: 40)
                             Text(teams[i].name)
                         }
                         

@@ -19,7 +19,15 @@ struct PlayerListView: View {
             NavigationLink(
                 destination: Text(players[i].name),
                 label: {
-                    Text(players[i].name)
+                    HStack{
+                        Image(players[i].imageName)
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .clipShape(Circle())
+                        Text(players[i].name)
+                    }
+                    
+                   
                 })
            
         }
@@ -31,6 +39,6 @@ struct PlayerListView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        PlayerListView(players: [])
+        PlayerListView(players:Player.Dummyplayers)
     }
 }

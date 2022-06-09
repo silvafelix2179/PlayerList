@@ -137,39 +137,73 @@ class Team:ObservableObject {
         Player(name: "Aymeric laporte", position: "defender", imageName: "steffin"),
         Player(name: "joao cancelo", position: "defender", imageName: "felix"),
         Player(name: "Phillippe sandler", position: "defender", imageName: "silva"),
-    ], logoName: "mc_logo"  )
+    ], logoName: "chelsealogo"  )
     static var liverpool = Team(city: "livepool", color: .red, league: .englandPremier, name: "Livepool FC", players:[
         Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
         Player(name: "Joao Felix", position: "Forward", imageName: "felix")
-    ], logoName: "mc_logo"  )
+    ], logoName: "livlogo"  )
     static var manchesterunited = Team(city: "Manchester", color: .red, league: .englandPremier, name: "Manchester United FC", players:[
         Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
         Player(name: "Joao Felix", position: "Forward", imageName: "felix")
-    ], logoName: "mc_logo"  )
+    ], logoName: "unitedlogo"  )
     static var totenham = Team(city: "London", color: .white, league: .englandPremier, name: "Tottenham Hotspur FC", players:[
         Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
         Player(name: "Joao Felix", position: "Forward", imageName: "felix")
-    ], logoName: "mc_logo"  )
+    ], logoName: "totlogo"  )
     
     static var arsenal = Team(city: "London", color: .red, league: .englandPremier, name: "Alsenal FC", players:[
         Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
         Player(name: "Joao Felix", position: "Forward", imageName: "felix")
-    ], logoName: "mc_logo"  )
+    ], logoName: "arsenallogo"  )
     
     static var astonvilla = Team(city: "Birmingham", color: .red, league: .englandPremier, name: "Aston Villa FC", players:[
         Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
         Player(name: "Joao Felix", position: "Forward", imageName: "felix")
-    ], logoName: "mc_logo"  )
+    ], logoName: "astonlogo"  )
     static var leeds = Team(city: "leeds", color: .yellow, league: .englandPremier, name: "Leeds United FC", players:[
         Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
         Player(name: "Joao Felix", position: "Forward", imageName: "felix")
-    ] , logoName: "mc_logo" )
+    ] , logoName: "leaselogo" )
     static var everton = Team(city: "livepool", color: .blue, league: .englandPremier, name: "Everton FC", players:[
         Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
         Player(name: "Joao Felix", position: "Forward", imageName: "felix")
-    ], logoName: "mc_logo"  )
-
-
+    ], logoName: "evertonlogo"  )
+    static var brentford = Team(city: "livepool", color: .blue, league: .englandPremier, name: "Everton FC", players:[
+        Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
+        Player(name: "Joao Felix", position: "Forward", imageName: "felix")
+    ], logoName: "evertonlogo"  )
+    static var westhum = Team(city: "livepool", color: .blue, league: .englandPremier, name: "Everton FC", players:[
+        Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
+        Player(name: "Joao Felix", position: "Forward", imageName: "felix")
+    ], logoName: "evertonlogo"  )
+    static var brighton = Team(city: "livepool", color: .blue, league: .englandPremier, name: "Everton FC", players:[
+        Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
+        Player(name: "Joao Felix", position: "Forward", imageName: "felix")
+    ], logoName: "evertonlogo"  )
+    static var newcastle = Team(city: "livepool", color: .blue, league: .englandPremier, name: "Everton FC", players:[
+        Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
+        Player(name: "Joao Felix", position: "Forward", imageName: "felix")
+    ], logoName: "evertonlogo"  )
+    static var wolvs = Team(city: "livepool", color: .blue, league: .englandPremier, name: "Everton FC", players:[
+        Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
+        Player(name: "Joao Felix", position: "Forward", imageName: "felix")
+    ], logoName: "evertonlogo"  )
+    static var astonvila = Team(city: "livepool", color: .blue, league: .englandPremier, name: "Everton FC", players:[
+        Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
+        Player(name: "Joao Felix", position: "Forward", imageName: "felix")
+    ], logoName: "evertonlogo"  )
+    static var southanpton = Team(city: "livepool", color: .blue, league: .englandPremier, name: "Everton FC", players:[
+        Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
+        Player(name: "Joao Felix", position: "Forward", imageName: "felix")
+    ], logoName: "evertonlogo"  )
+    static var fram = Team(city: "livepool", color: .blue, league: .englandPremier, name: "Everton FC", players:[
+        Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
+        Player(name: "Joao Felix", position: "Forward", imageName: "felix")
+    ], logoName: "evertonlogo"  )
+    static var bonmath = Team(city: "livepool", color: .blue, league: .englandPremier, name: "Everton FC", players:[
+        Player(name: "David Silva", position: "Midfielder", imageName: "silva"),
+        Player(name: "Joao Felix", position: "Forward", imageName: "felix")
+    ], logoName: "evertonlogo"  )
    static var all:[Team] = [.leicesterCity, .mancity, .chelsea,.liverpool,.manchesterunited,.totenham,.arsenal,.astonvilla,.leeds,.everton ]
     
 
